@@ -1,4 +1,4 @@
-# abacus-ng — the honest calculator
+# The Honest Calculator 📏
 
 A calculator web app that refuses to use `eval`. Every expression is tokenized and parsed by a hand-written Pratt parser, walked by a tiny tree-walking evaluator, and rendered live as an AST in the browser. It's probably overkill for `2 + 2`, but that's sort of the point.
 
