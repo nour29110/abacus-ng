@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>abacus-ng · the honest calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <header>
+      <h1>abacus-ng</h1>
+      <p class="sub">a calculator that shows its work</p>
+    </header>
+
+    <section class="io">
+      <input id="expr" autofocus spellcheck="false" placeholder="try: 2 + 3 * (4 - 1) ^ 2" />
+      <div id="result" class="result">&mdash;</div>
+      <div id="error" class="error" hidden></div>
+    </section>
+
+    <section class="tree-wrap">
+      <h2>abstract syntax tree</h2>
+      <p class="hint">this is what the parser actually built. no <code>eval</code> involved.</p>
+      <svg id="tree" xmlns="http://www.w3.org/2000/svg"></svg>
+    </section>
+
+    <footer>
+      <a href="https://github.com/nour29110/abacus-ng">github</a> &middot;
+      zero dependencies on the frontend, zero eval on the backend
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
